@@ -1,5 +1,12 @@
+import Navbar from "../organisms/Navbar";
+
 const Work = () => {
-  return <h1>work</h1>;
+  return (
+    <>
+      <Navbar />
+      <h1>work</h1>
+    </>
+  );
 };
 
 export default Work;
