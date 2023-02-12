@@ -55,19 +55,19 @@ const Navbar: NextPage = () => {
         <HeaderMenu>
           <li>
             <MyNavLink href="/">
-              {/* <FontAwesomeIcon
+              <FontAwesomeIcon
                 icon={faAddressCard}
                 style={{ marginRight: "10px" }}
-              /> */}
+              />
               About
             </MyNavLink>
           </li>
           <li>
             <MyNavLink href="/work">
-              {/* <FontAwesomeIcon
+              <FontAwesomeIcon
                 icon={faLaptopCode}
                 style={{ marginRight: "10px" }}
-              /> */}
+              />
               Work
             </MyNavLink>
           </li>
