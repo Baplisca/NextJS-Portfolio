@@ -1,0 +1,44 @@
+.HeaderWrapper{
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+
+  background-color: #343a40;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+
+  height: 50px;
+}
+
+.HeaderMenu{
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  list-style: none;
+  display: flex;
+}
+
+.MyNavLink{
+  color: #888;
+  text-decoration: none;
+  padding: 15px;
+  :hover {
+    color: #fff;
+  }
+}
+
+.LngWrapper{
+  :hover {
+    color: #fff;
+  }
+  cursor: pointer;
+  color: #888;
+  margin-right: 5px;
+}
+
+.GapWrapper{
+  margin: 0 10px;
+  color: #fff;
+}
