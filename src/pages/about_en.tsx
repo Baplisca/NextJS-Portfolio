@@ -1,5 +1,12 @@
+import Navbar from "../organisms/Navbar";
+
 const About = () => {
-  return <h1>about_en</h1>;
+  return (
+    <>
+      <Navbar />
+      <h1>About_en</h1>
+    </>
+  );
 };
 
 export default About;

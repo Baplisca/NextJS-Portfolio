@@ -3,79 +3,83 @@ import styled from "styled-components";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAddressCard, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
+import styles from "./Navbar.module.scss";
+import { useRouter } from "next/router";
 
-const HeaderWrapper = styled.div`
-  position: sticky;
-  top: 0px;
-  z-index: 100;
-
-  background-color: #343a40;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-
-  height: 50px;
-`;
-const HeaderMenu = styled.ul`
-  margin: 0;
-  padding: 0;
-  font-size: 18px;
-  list-style: none;
-  display: flex;
-`;
-
-const MyNavLink = styled(Link)`
-  color: #888;
-  text-decoration: none;
-  padding: 15px;
-  :hover {
-    color: #fff;
-  }
-`;
-
-const LngWrapper = styled.li`
-  :hover {
-    color: #fff;
-  }
-  cursor: pointer;
-  color: #888;
-  margin-right: 5px;
-`;
-const GapWrapper = styled.li`
-  margin: 0 10px;
-  color: #fff;
-`;
+// FontAweSome Bug :  https://stackoverflow.com/questions/56334381/why-my-font-awesome-icons-are-being-displayed-big-at-first-and-then-updated-to-t
+// The following import prevents a Font Awesome icon server-side rendering bug,
+// where the icons flash from a very large icon down to a properly sized one:
+import "@fortawesome/fontawesome-svg-core/styles.css";
+// Prevent fontawesome from adding its CSS since we did it manually above:
+import { config } from "@fortawesome/fontawesome-svg-core";
+import { useLanguageStore } from "../stores/language-store";
+import { usePageStore } from "../stores/page-store";
+config.autoAddCss = false; /* eslint-disable import/first */
 
 const Navbar: NextPage = () => {
+  const router = useRouter();
+  const languageStore = useLanguageStore();
+  const pageStore = usePageStore();
   return (
     <>
-      <HeaderWrapper>
+      <div className={styles.HeaderWrapper}>
         <div></div>
-        <HeaderMenu>
+        <ul className={styles.HeaderMenu}>
           <li>
-            <MyNavLink href="/">
+            <Link
+              className={styles.MyNavLink}
+              onClick={() => {
+                pageStore.setPage("about");
+              }}
+              href={languageStore.isEnglish ? "/about_en" : "/"}
+            >
               <FontAwesomeIcon
                 icon={faAddressCard}
                 style={{ marginRight: "10px" }}
               />
               About
-            </MyNavLink>
+            </Link>
           </li>
           <li>
-            <MyNavLink href="/work">
+            <Link
+              className={styles.MyNavLink}
+              onClick={() => {
+                pageStore.setPage("work");
+              }}
+              href={languageStore.isEnglish ? "/work_en" : "/work"}
+            >
               <FontAwesomeIcon
                 icon={faLaptopCode}
                 style={{ marginRight: "10px" }}
               />
               Work
-            </MyNavLink>
+            </Link>
           </li>
-          <GapWrapper>|</GapWrapper>
-          <LngWrapper>あ</LngWrapper>
-          <LngWrapper>A</LngWrapper>
-        </HeaderMenu>
-      </HeaderWrapper>
+          <li className={styles.GapWrapper}>|</li>
+          <li
+            className={styles.LngWrapper}
+            onClick={() => {
+              languageStore.setLanguage("Ja"),
+                pageStore.page == "about"
+                  ? router.push("/")
+                  : router.push("work");
+            }}
+          >
+            あ
+          </li>
+          <li
+            className={styles.LngWrapper}
+            onClick={() => {
+              languageStore.setLanguage("En"),
+                pageStore.page == "about"
+                  ? router.push("/about_en")
+                  : router.push("/work_en");
+            }}
+          >
+            A
+          </li>
+        </ul>
+      </div>
     </>
   );
 };

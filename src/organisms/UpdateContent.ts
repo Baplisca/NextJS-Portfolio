@@ -1,5 +1,5 @@
 const UpdateContent = () => {
-  return <div>UpdateContent</div>;
+  return "UpdateContent";
 };
 
 export default UpdateContent;
