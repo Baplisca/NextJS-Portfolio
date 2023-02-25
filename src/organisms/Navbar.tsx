@@ -1,5 +1,4 @@
 import { NextPage } from "next";
-import styled from "styled-components";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAddressCard, faLaptopCode } from "@fortawesome/free-solid-svg-icons";

@@ -1,5 +1,6 @@
 const Work = () => {
-  return "Work";
-};
-
-export default Work;
+    return "Work";
+  };
+  
+  export default Work;
+  
