@@ -11,7 +11,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <h1>Home</h1>
+      <h1>About</h1>
     </>
   );
 };

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAddressCard, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 import styles from "./Navbar.module.scss";
+import { useRouter } from "next/router";
 
 // FontAweSome Bug :  https://stackoverflow.com/questions/56334381/why-my-font-awesome-icons-are-being-displayed-big-at-first-and-then-updated-to-t
 // The following import prevents a Font Awesome icon server-side rendering bug,
@@ -10,16 +11,27 @@ import styles from "./Navbar.module.scss";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 // Prevent fontawesome from adding its CSS since we did it manually above:
 import { config } from "@fortawesome/fontawesome-svg-core";
+import { useLanguageStore } from "../stores/language-store";
+import { usePageStore } from "../stores/page-store";
 config.autoAddCss = false; /* eslint-disable import/first */
 
 const Navbar: NextPage = () => {
+  const router = useRouter();
+  const languageStore = useLanguageStore();
+  const pageStore = usePageStore();
   return (
     <>
       <div className={styles.HeaderWrapper}>
         <div></div>
         <ul className={styles.HeaderMenu}>
           <li>
-            <Link className={styles.MyNavLink} href="/">
+            <Link
+              className={styles.MyNavLink}
+              onClick={() => {
+                pageStore.setPage("about");
+              }}
+              href={languageStore.isEnglish ? "/about_en" : "/"}
+            >
               <FontAwesomeIcon
                 icon={faAddressCard}
                 style={{ marginRight: "10px" }}
@@ -28,7 +40,13 @@ const Navbar: NextPage = () => {
             </Link>
           </li>
           <li>
-            <Link className={styles.MyNavLink} href="/work">
+            <Link
+              className={styles.MyNavLink}
+              onClick={() => {
+                pageStore.setPage("work");
+              }}
+              href={languageStore.isEnglish ? "/work_en" : "/work"}
+            >
               <FontAwesomeIcon
                 icon={faLaptopCode}
                 style={{ marginRight: "10px" }}
@@ -37,8 +55,28 @@ const Navbar: NextPage = () => {
             </Link>
           </li>
           <li className={styles.GapWrapper}>|</li>
-          <li className={styles.LngWrapper}>あ</li>
-          <li className={styles.LngWrapper}>A</li>
+          <li
+            className={styles.LngWrapper}
+            onClick={() => {
+              languageStore.setLanguage("Ja"),
+                pageStore.page == "about"
+                  ? router.push("/")
+                  : router.push("work");
+            }}
+          >
+            あ
+          </li>
+          <li
+            className={styles.LngWrapper}
+            onClick={() => {
+              languageStore.setLanguage("En"),
+                pageStore.page == "about"
+                  ? router.push("/about_en")
+                  : router.push("/work_en");
+            }}
+          >
+            A
+          </li>
         </ul>
       </div>
     </>

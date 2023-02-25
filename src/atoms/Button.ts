@@ -1,6 +1,5 @@
 const Button = () => {
-    return "Button";
-  };
-  
-  export default Button;
-  
+  return "Button";
+};
+
+export default Button;
