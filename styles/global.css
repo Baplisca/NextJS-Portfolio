@@ -5,3 +5,12 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
 }
+
+.AboutH2Wrapper {
+  padding: 0px 0px 5px 0px;
+  border-bottom: 2px solid #999999;
+}
+
+.DisableListDot {
+  list-style-type: none;
+}
