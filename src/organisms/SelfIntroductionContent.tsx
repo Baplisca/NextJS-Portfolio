@@ -1,9 +1,10 @@
 import { IAboutContent } from "../interfaces/about-content.interface";
-import ContentsDisplay from "../molecules/ContentsDisplay";
+import ContentsDisplay from "./ContentsDisplay";
 
 const selfIntroductionItems: IAboutContent[] = [
   {
     value: "横田　光悦 (Yokota Koetsu)",
+    value_en: "Koetsu Yokota",
     isDisableBr: true,
     isDisableDot: true,
   },
