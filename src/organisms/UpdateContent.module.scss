@@ -1,0 +1,40 @@
+.ScrollOuterWrapper {
+  background: rgba(54, 54, 54, 0.116);
+  box-shadow: inset 0 0 2px rgb(12, 12, 12);
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+}
+
+.ScrollWrapper {
+  height: 20em;
+  overflow: scroll;
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #f5f5f5;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0 0 2px #777;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+    box-shadow: none;
+  }
+}
+
+.UpdateHrWrapper {
+  color: "#ffffff";
+  border-width: 2.5px 0 0 0;
+}
+
+.HrWrapper {
+  border-width: 1px 0px 0px 0px;
+  border-style: solid;
+  border-color: #cccccc;
+  height: 1px;
+}
