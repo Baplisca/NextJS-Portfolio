@@ -1,9 +1,9 @@
 import { IAboutContent } from "../interfaces/about-content.interface";
-import ContentsDisplay from "../molecules/ContentsDisplay";
+import ContentsDisplay from "./ContentsDisplay";
 
 const freeTimeItems: IAboutContent[] = [
-  { value: "サウナ" },
-  { value: "麻雀" },
+  { value: "サウナ", value_en: "Sauna" },
+  { value: "麻雀", value_en: "Mahjong" },
   {
     value: (
       <a
@@ -15,6 +15,15 @@ const freeTimeItems: IAboutContent[] = [
       </a>
     ),
     isDisableBr: true,
+    value_en: (
+      <a
+        href="https://atcoder.jp/users/Baplisca"
+        rel="noreferrer noopener"
+        target="_blank"
+      >
+        Competitive programming
+      </a>
+    ),
   },
   {
     value: (
@@ -27,13 +36,14 @@ const freeTimeItems: IAboutContent[] = [
         <img
           src="https://img.shields.io/endpoint?url=https%3A%2F%2Fatcoder-badges.now.sh%2Fapi%2Fatcoder%2Fjson%2FBaplisca"
           alt="競技プログラミング レート"
+          loading="lazy"
         />
       </a>
     ),
     isDisableDot: true,
   },
-  { value: "ピアノ (キーボード)" },
-  { value: "野球観戦 (楽天ファン)" },
+  { value: "ピアノ (キーボード)", value_en: "Piano" },
+  { value: "野球観戦 (楽天ファン)", value_en: "Watching baseball game" },
 ];
 
 const FreeTimeContent = () => {

@@ -1,8 +1,11 @@
 import { IAboutContent } from "../interfaces/about-content.interface";
-import ContentsDisplay from "../molecules/ContentsDisplay";
+import ContentsDisplay from "./ContentsDisplay";
 
 const currentWorkItems: IAboutContent[] = [
-  { value: "楽天 Webアプリケーションエンジニア 2022.4 ~" },
+  {
+    value: "楽天 Webアプリケーションエンジニア 2022.4 ~",
+    value_en: "Rakuten Applications Engineer Apr 2022 ~",
+  },
 ];
 
 const CurrentWorkContent = () => {
