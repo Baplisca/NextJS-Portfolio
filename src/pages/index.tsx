@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Navbar from "../organisms/Navbar";
-import About from "../templates/about";
+import AboutTemplate from "../templates/AboutTemplate";
 
 const Home: NextPage = () => {
   return (
@@ -12,7 +12,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <About />
+      <AboutTemplate />
     </>
   );
 };
