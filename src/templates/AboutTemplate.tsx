@@ -1,4 +1,3 @@
-import React from "react";
 import ArbeitContent from "../organisms/ArbeitContent";
 import AwardContent from "../organisms/AwardContent";
 import CurrentWorkContent from "../organisms/CurrentWorkContent";
@@ -8,9 +7,9 @@ import InternContent from "../organisms/InternContent";
 import QualificationContent from "../organisms/QualificationContent";
 import SelfIntroductionContent from "../organisms/SelfIntroductionContent";
 import UpdateContent from "../organisms/UpdateContent";
-import styles from "./about.module.scss";
+import styles from "./CommonTemplate.module.scss";
 
-const About = () => {
+const AboutTemplate = () => {
   return (
     <>
       <div className={styles.ContentWrapper}>
@@ -28,4 +27,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutTemplate;
