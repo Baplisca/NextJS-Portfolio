@@ -13,6 +13,28 @@ const updateItems: IUpdateItem[] = [
   {
     value: (
       <a
+        href="https://baplisca.hatenablog.com/entry/2023/03/08/202113"
+        rel="noreferrer noopener"
+        target="_blank"
+      >
+        Web Speed Hackathon 2023 21位 でした
+      </a>
+    ),
+    date: "2023.3.8",
+    value_en: (
+      <a
+        href="https://baplisca.hatenablog.com/entry/2022/12/30/150812"
+        rel="noreferrer noopener"
+        target="_blank"
+      >
+        Web Speed Hackathon 2023 21th / 58
+      </a>
+    ),
+    date_en: "2023-3-8",
+  },
+  {
+    value: (
+      <a
         href="https://baplisca.hatenablog.com/entry/2022/12/30/150812"
         rel="noreferrer noopener"
         target="_blank"
