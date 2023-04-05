@@ -1,5 +1,7 @@
 import { IWorkImage } from "../interfaces/work-image.interface";
+import { IWorkVideo } from "../interfaces/work-video.interface";
 import WorkImageContent from "../molecules/WorkImageContent";
+import WorkVideoContent from "../molecules/WorkVideoContent";
 
 const imageItems: IWorkImage[] = [
   {
@@ -22,6 +24,27 @@ const imageItems: IWorkImage[] = [
   },
 ];
 
+const videoItems: IWorkVideo[] = [
+  {
+    width: 800,
+    height: 450,
+    src: "https://www.youtube.com/embed/c98LeJbuA24",
+    title: "海洋生物たちの復讐 Stage1",
+  },
+  {
+    width: 800,
+    height: 450,
+    src: "https://www.youtube.com/embed/pgpB8KDjwEI",
+    title: "海洋生物たちの復讐 Stage2",
+  },
+  {
+    width: 800,
+    height: 450,
+    src: "https://www.youtube.com/embed/aorVrGWEC6M",
+    title: "海洋生物たちの復讐 Stage3",
+  },
+];
+
 const SeaCreatureContent = () => {
   return (
     <>
@@ -29,7 +52,7 @@ const SeaCreatureContent = () => {
       <p>大学1年次に制作した初めてのゲーム作品です</p>
       <p>縦スクロールシューティングゲームで, C言語とDXライブラリを用いました</p>
       <WorkImageContent imageItems={imageItems} />
-      {/* <WorkVideoContent /> */}
+      <WorkVideoContent videoItems={videoItems} />
     </>
   );
 };

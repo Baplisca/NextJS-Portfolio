@@ -1,4 +1,5 @@
-// import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 import { IWorkImage } from "../interfaces/work-image.interface";
 import Image from "next/image";
 
@@ -7,17 +8,17 @@ const WorkImageContent = (props: { imageItems: IWorkImage[] }) => {
   return (
     <>
       <div style={{ textAlign: "center" }}>
-        {/* <Carousel autoPlay infiniteLoop> */}
-        {props.imageItems.map((imageItem) => (
-          <Image
-            src={imagePathBase + imageItem.src}
-            alt={imageItem.alt}
-            key={imageItem.src}
-            width={imageItem.width}
-            height={imageItem.height}
-          />
-        ))}
-        {/* </Carousel> */}
+        <Carousel autoPlay infiniteLoop>
+          {props.imageItems.map((imageItem) => (
+            <Image
+              src={imagePathBase + imageItem.src}
+              alt={imageItem.alt}
+              key={imageItem.src}
+              width={imageItem.width}
+              height={imageItem.height}
+            />
+          ))}
+        </Carousel>
       </div>
     </>
   );
