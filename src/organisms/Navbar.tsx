@@ -24,9 +24,13 @@ const Navbar: NextPage = () => {
       <div className={styles.HeaderWrapper}>
         <div></div>
         <ul className={styles.HeaderMenu}>
-          <li>
+          <li className={styles.HoverWrapper}>
             <Link
-              className={styles.MyNavLink}
+              className={
+                pageStore.page === "about"
+                  ? styles.SelectedLink
+                  : styles.NonSelectedLink
+              }
               onClick={() => {
                 pageStore.setPage("about");
               }}
@@ -39,9 +43,13 @@ const Navbar: NextPage = () => {
               About
             </Link>
           </li>
-          <li>
+          <li className={styles.HoverWrapper}>
             <Link
-              className={styles.MyNavLink}
+              className={
+                pageStore.page === "work"
+                  ? styles.SelectedLink
+                  : styles.NonSelectedLink
+              }
               onClick={() => {
                 pageStore.setPage("work");
               }}
@@ -56,7 +64,11 @@ const Navbar: NextPage = () => {
           </li>
           <li className={styles.GapWrapper}>|</li>
           <li
-            className={styles.LngWrapper}
+            className={
+              languageStore.isEnglish
+                ? styles.NonSelectedLng
+                : styles.SelectedLng
+            }
             onClick={() => {
               languageStore.setLanguage("Ja"),
                 pageStore.page == "about"
@@ -64,10 +76,14 @@ const Navbar: NextPage = () => {
                   : router.push("work");
             }}
           >
-            あ
+            <a>あ</a>
           </li>
           <li
-            className={styles.LngWrapper}
+            className={
+              languageStore.isEnglish
+                ? styles.SelectedLng
+                : styles.NonSelectedLng
+            }
             onClick={() => {
               languageStore.setLanguage("En"),
                 pageStore.page == "about"
@@ -75,7 +91,7 @@ const Navbar: NextPage = () => {
                   : router.push("/work_en");
             }}
           >
-            A
+            <a>A</a>
           </li>
         </ul>
       </div>
