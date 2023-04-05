@@ -1,4 +1,4 @@
-import { Carousel } from "react-responsive-carousel";
+// import { Carousel } from "react-responsive-carousel";
 import { IWorkImage } from "../interfaces/work-image.interface";
 import Image from "next/image";
 

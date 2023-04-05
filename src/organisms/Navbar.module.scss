@@ -20,25 +20,42 @@
   display: flex;
 }
 
-.MyNavLink {
+.NonSelectedLink {
   color: #888;
   text-decoration: none;
   padding: 15px;
+}
+
+.SelectedLink {
+  color: #888;
+  text-decoration: none;
+  padding: 15px;
+  color: #fff;
+  border-bottom: solid 2px cyan;
+}
+
+.NonSelectedLng {
+  cursor: pointer;
+  color: #888;
+  margin-right: 5px;
   :hover {
     color: #fff;
   }
 }
 
-.LngWrapper {
-  :hover {
-    color: #fff;
-  }
+.SelectedLng {
   cursor: pointer;
-  color: #888;
+  color: #fff;
   margin-right: 5px;
 }
 
 .GapWrapper {
   margin: 0 10px;
   color: #fff;
+}
+
+.HoverWrapper {
+  :hover {
+    color: #fff;
+  }
 }
