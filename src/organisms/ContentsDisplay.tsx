@@ -7,7 +7,7 @@ const ContentsDisplay = (Items: IAboutContent[]) => {
     const value =
       languageStore.isEnglish && _item.value_en ? _item.value_en : _item.value;
     return (
-      <>
+      <div key={idx}>
         {idx == 0 && <br />}
         {_item.isDisableDot ? (
           <li className="DisableListDot">{value}</li>
@@ -15,7 +15,7 @@ const ContentsDisplay = (Items: IAboutContent[]) => {
           <li>{value}</li>
         )}
         {!_item.isDisableBr && <br />}
-      </>
+      </div>
     );
   });
 };

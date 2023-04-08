@@ -1,0 +1,16 @@
+.FooterWrapper {
+  font-size: 14px;
+  height: 100px;
+  clear: left;
+  text-align: center;
+}
+
+.FooterInnerWrapper {
+  display: inline-block;
+  margin: 0 8px;
+  & img {
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+  }
+}

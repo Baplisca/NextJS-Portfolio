@@ -5,6 +5,12 @@ import WorkVideoContent from "../molecules/WorkVideoContent";
 
 const imageItems: IWorkImage[] = [
   {
+    src: "SeaCreature0.jpeg",
+    alt: "海洋生物たちの復讐 Title",
+    width: 800,
+    height: 582,
+  },
+  {
     src: "SeaCreature1.jpeg",
     alt: "海洋生物たちの復讐 画像1",
     width: 800,
