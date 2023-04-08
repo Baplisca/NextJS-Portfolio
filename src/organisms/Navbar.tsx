@@ -31,9 +31,6 @@ const Navbar: NextPage = () => {
                   ? styles.SelectedLink
                   : styles.NonSelectedLink
               }
-              onClick={() => {
-                pageStore.setPage("about");
-              }}
               href={languageStore.isEnglish ? "/about_en" : "/"}
             >
               <FontAwesomeIcon
@@ -50,9 +47,6 @@ const Navbar: NextPage = () => {
                   ? styles.SelectedLink
                   : styles.NonSelectedLink
               }
-              onClick={() => {
-                pageStore.setPage("work");
-              }}
               href={languageStore.isEnglish ? "/work_en" : "/work"}
             >
               <FontAwesomeIcon
@@ -70,10 +64,9 @@ const Navbar: NextPage = () => {
                 : styles.SelectedLng
             }
             onClick={() => {
-              languageStore.setLanguage("Ja"),
-                pageStore.page == "about"
-                  ? router.push("/")
-                  : router.push("work");
+              pageStore.page == "about"
+                ? router.push("/")
+                : router.push("work");
             }}
           >
             <a>あ</a>
@@ -85,10 +78,9 @@ const Navbar: NextPage = () => {
                 : styles.NonSelectedLng
             }
             onClick={() => {
-              languageStore.setLanguage("En"),
-                pageStore.page == "about"
-                  ? router.push("/about_en")
-                  : router.push("/work_en");
+              pageStore.page == "about"
+                ? router.push("/about_en")
+                : router.push("/work_en");
             }}
           >
             <a>A</a>
