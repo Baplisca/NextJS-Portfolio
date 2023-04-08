@@ -1,5 +1,6 @@
 import { NextPage } from "next";
 import Head from "next/head";
+import Footer from "../molecules/Footer";
 import Navbar from "../organisms/Navbar";
 import { useLanguageStore } from "../stores/language-store";
 import { usePageStore } from "../stores/page-store";
@@ -19,6 +20,7 @@ const AboutEn: NextPage = () => {
       </Head>
       <Navbar />
       <AboutTemplate />
+      <Footer />
     </>
   );
 };

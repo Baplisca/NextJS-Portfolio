@@ -273,13 +273,13 @@ const updateItems: IUpdateItem[] = [
 
 const UpdateItem = () => {
   const languageStore = useLanguageStore();
-  return updateItems.map((_item: IUpdateItem) => {
+  return updateItems.map((_item: IUpdateItem, idx) => {
     const date =
       languageStore.isEnglish && _item.date_en ? _item.date_en : _item.date;
     const value =
       languageStore.isEnglish && _item.value_en ? _item.value_en : _item.value;
     return (
-      <>
+      <div key={idx}>
         <div style={{ marginRight: "50px" }}>
           <li className="DisableListDot">{date}</li>
           <li className="DisableListDot">{value}</li>
@@ -288,7 +288,7 @@ const UpdateItem = () => {
           </div>
         </div>
         <br />
-      </>
+      </div>
     );
   });
 };

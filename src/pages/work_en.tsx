@@ -1,6 +1,9 @@
+import Head from "next/head";
+import Footer from "../molecules/Footer";
 import Navbar from "../organisms/Navbar";
 import { useLanguageStore } from "../stores/language-store";
 import { usePageStore } from "../stores/page-store";
+import WorkTemplate from "../templates/WorkTemplate";
 
 const Work = () => {
   const languageStore = useLanguageStore();
@@ -9,8 +12,14 @@ const Work = () => {
   if (pageStore.page != "work") pageStore.setPage("work");
   return (
     <>
+      <Head>
+        <title>Baplisca</title>
+        <meta name="description" content="Baplisca Homepage" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Navbar />
-      <h1>Work_en</h1>
+      <WorkTemplate />
+      <Footer />
     </>
   );
 };
