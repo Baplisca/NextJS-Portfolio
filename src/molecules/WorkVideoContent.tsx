@@ -1,13 +1,15 @@
 import React from "react";
 import { IWorkVideo } from "../interfaces/work-video.interface";
+import styles from "./WorkVideoContent.module.scss";
+
 const WorkVideoContent = (props: { videoItems: IWorkVideo[] }) => {
   return (
     <>
       <details>
         <summary>動画</summary>
         <div style={{ textAlign: "center" }}>
-          {props.videoItems.map((videoItem) => (
-            <p key={videoItem.src}>
+          {props.videoItems.map((videoItem, idx) => (
+            <div className={styles.YoutubeWrapper} key={idx}>
               <iframe
                 width={videoItem.width}
                 height={videoItem.height}
@@ -16,7 +18,7 @@ const WorkVideoContent = (props: { videoItems: IWorkVideo[] }) => {
                 allowFullScreen
                 title={videoItem.title}
               ></iframe>
-            </p>
+            </div>
           ))}
         </div>
       </details>
