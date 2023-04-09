@@ -1,7 +1,7 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { IWorkImage } from "../interfaces/work-image.interface";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const imagePathBase = "/assets/";
 
@@ -16,6 +16,7 @@ const WorkImageContent = (props: {
         <Carousel
           autoPlay
           infiniteLoop
+          showThumbs={false}
           centerMode={props.centerMode}
           centerSlidePercentage={props.centerSlidePercentage}
         >
