@@ -11,9 +11,10 @@ import { useRouter } from "next/router";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 // Prevent fontawesome from adding its CSS since we did it manually above:
 import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false; /* eslint-disable import/first */
+
 import { useLanguageStore } from "../stores/language-store";
 import { usePageStore } from "../stores/page-store";
-config.autoAddCss = false; /* eslint-disable import/first */
 
 const Navbar: NextPage = () => {
   const router = useRouter();
