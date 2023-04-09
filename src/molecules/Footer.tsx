@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./Footer.module.scss";
 
 const Footer = () => {
@@ -13,7 +12,7 @@ const Footer = () => {
             rel="noreferrer noopener"
             target="_blank"
           >
-            <Image
+            <img
               src="/assets/linkedin.svg"
               alt="linkedin アイコン"
               width="60"
@@ -25,7 +24,7 @@ const Footer = () => {
             rel="noreferrer noopener"
             target="_blank"
           >
-            <Image
+            <img
               src="/assets/twitter-icon.jpg"
               alt="Twitter アイコン"
               width="60"
@@ -37,7 +36,7 @@ const Footer = () => {
             rel="noreferrer noopener"
             target="_blank"
           >
-            <Image
+            <img
               src="/assets/github-icon.jpg"
               alt="GitHub アイコン"
               width="60"
@@ -49,7 +48,7 @@ const Footer = () => {
             rel="noreferrer noopener"
             target="_blank"
           >
-            <Image
+            <img
               src="/assets/hatena-icon.jpeg"
               alt="はてなブログ アイコン"
               width="60"
