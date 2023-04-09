@@ -11,6 +11,12 @@ interface IUpdateItem {
 
 const updateItems: IUpdateItem[] = [
   {
+    value: "サイト全体を少しだけアップデートしました",
+    date: "2023.4.9",
+    value_en: "Minor updates to the entire site",
+    date_en: "2023-4-9",
+  },
+  {
     value: (
       <a
         href="https://baplisca.hatenablog.com/entry/2023/03/08/202113"
