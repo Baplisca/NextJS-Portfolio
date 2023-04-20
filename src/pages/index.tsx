@@ -16,7 +16,6 @@ const Home: NextPage = () => {
       <Head>
         <title>Baplisca</title>
         <meta name="description" content="Baplisca Homepage" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
       <AboutTemplate />
