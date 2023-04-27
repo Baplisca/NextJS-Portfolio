@@ -2,36 +2,41 @@
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
 git clone git@github.com:Baplisca/NextJS-Portfolio.git
 cd NextJS-Portfolio
-
+npm i
 npm run dev
-# or
-yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Dependency Library
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Framework
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+・Next.js
 
-## Learn More
+### State management
 
-To learn more about Next.js, take a look at the following resources:
+[・zustand](https://github.com/pmndrs/zustand)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Linter/Formatter
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+・ESLint
 
-## Deploy on Vercel
+・Prettier
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Other
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[・nextjs-progressbar](https://github.com/apal21/nextjs-progressbar) show progress bar
+
+[・font-awesome](https://fontawesome.com/) icon
+
+[・react-responsive](https://github.com/contra/react-responsive) media query in react
+
+[・react-responsive-carousel](https://github.com/leandrowd/react-responsive-carousel) use auto slide show
+
+### Language
+
+・typescript (Ver 4.9.5)
