@@ -20,7 +20,7 @@
     "react-dom": "18.2.0",
     "react-responsive-carousel": "^3.2.23",
     "sass": "^1.59.2",
-    "zustand": "^4.3.3"
+    "zustand": "^4.3.7"
   },
   "devDependencies": {
     "@types/node": "18.16.3",
