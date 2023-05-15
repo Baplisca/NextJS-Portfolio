@@ -12,48 +12,28 @@ const Footer = () => {
             rel="noreferrer noopener"
             target="_blank"
           >
-            <img
-              src="/assets/linkedin.svg"
-              alt="linkedin アイコン"
-              width="60"
-              height="60"
-            />
+            <img src="/assets/linkedin.svg" alt="linkedin アイコン" />
           </a>
           <a
             href="https://twitter.com/sooooouls"
             rel="noreferrer noopener"
             target="_blank"
           >
-            <img
-              src="/assets/twitter-icon.jpg"
-              alt="Twitter アイコン"
-              width="60"
-              height="60"
-            />
+            <img src="/assets/twitter-icon.jpg" alt="Twitter アイコン" />
           </a>
           <a
             href="https://github.com/Baplisca"
             rel="noreferrer noopener"
             target="_blank"
           >
-            <img
-              src="/assets/github-icon.jpg"
-              alt="GitHub アイコン"
-              width="60"
-              height="60"
-            />
+            <img src="/assets/github-icon.jpg" alt="GitHub アイコン" />
           </a>
           <a
             href="https://baplisca.hatenablog.com/"
             rel="noreferrer noopener"
             target="_blank"
           >
-            <img
-              src="/assets/hatena-icon.jpeg"
-              alt="はてなブログ アイコン"
-              width="60"
-              height="60"
-            />
+            <img src="/assets/hatena-icon.jpeg" alt="はてなブログ アイコン" />
           </a>
         </div>
       </div>
