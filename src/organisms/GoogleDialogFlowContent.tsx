@@ -20,7 +20,7 @@ const GoogleDialogFlowContent = () => {
         ランダムに料理カテゴリーを4つ作り、選んだカテゴリー内で人気のレシピを表示します
       </p>
       <p>
-        右のアイコンから試せますが、メンテナンスしていないため動かなくなる時が来るかもしれません
+        右下のアイコンから試せますが、メンテナンスしていないため動かなくなる時が来るかもしれません
         (裏で動いているコード
         <a
           href="https://github.com/Baplisca/Dialogflow_RakutenRecipe"
