@@ -1,7 +1,9 @@
+import GoogleDialogFlow from "../molecules/GoogleDialogFlow";
+
 const GoogleDialogFlowContent = () => {
   return (
     <>
-      <h2 className="WorkH2Wrapper">Dialogflowを用いたチャットボット</h2>
+      <h2 className="WorkH2Wrapper">レコメンドレシピチャットボット</h2>
       <p>Dialogflowを用いて簡単な献立レコメンドチャットボットを作りました</p>
       <p>
         外部APIとして
@@ -29,6 +31,7 @@ const GoogleDialogFlowContent = () => {
         </a>
         )
       </p>
+      <GoogleDialogFlow />
     </>
   );
 };

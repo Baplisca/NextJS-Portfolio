@@ -1,4 +1,5 @@
 import CompetitiveProgrammingContent from "../organisms/CompetitiveProgrammingContent";
+import GoogleDialogFlowContent from "../organisms/GoogleDialogFlowContent";
 import SeaCreatureContent from "../organisms/SeaCreatureContent";
 import TadanoAction3DXGameContent from "../organisms/TadanoAction3DXGameContent";
 import TapiTapiContent from "../organisms/TapiTapiContent";
@@ -24,7 +25,9 @@ const WorkTemplate = () => {
         <TapiTapiContent />
         <br />
         <br />
-        {/* <GoogleDialogFlowContent /> */}
+        <GoogleDialogFlowContent />
+        <br />
+        <br />
       </div>
     </>
   );
