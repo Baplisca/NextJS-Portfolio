@@ -8,7 +8,6 @@ const GoogleDialogFlow = () => {
     --df-messenger-user-message: #75F767;
   }
   </style>
-  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
   <df-messenger
     intent="WELCOME"
     chat-title="楽天レシピからおすすめ献立提案Bot"
@@ -16,7 +15,15 @@ const GoogleDialogFlow = () => {
     language-code="ja"
     chat-icon="/assets/RakutenRecipe.png"
    ></df-messenger>`;
-  return <>{parse(html)}</>;
+  return (
+    <>
+      <Script
+        src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"
+        strategy="lazyOnload"
+      />
+      {parse(html)}
+    </>
+  );
 };
 
 export default GoogleDialogFlow;
