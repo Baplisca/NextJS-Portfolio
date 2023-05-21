@@ -27,7 +27,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ・Prettier
 
-### Other
+### Other Library
 
 [・nextjs-progressbar](https://github.com/apal21/nextjs-progressbar) show progress bar
 
@@ -37,6 +37,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 [・react-responsive-carousel](https://github.com/leandrowd/react-responsive-carousel) use auto slide show
 
-### Language
+[・html-react-parser](https://github.com/remarkablemark/html-react-parser#readme) parce html in .tsx
+
+[・volta](https://github.com/volta-cli/volta) node version control tool
+
+### Enviroment
 
 ・typescript (Ver 4.9.5)
+
+・node (Ver 18.13.0)
