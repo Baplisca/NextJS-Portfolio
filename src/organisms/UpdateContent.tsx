@@ -11,6 +11,28 @@ interface IUpdateItem {
 
 const updateItems: IUpdateItem[] = [
   {
+    value: (
+      <a
+        href="https://baplisca.onrender.com/work_en/"
+        rel="noreferrer noopener"
+        target="_blank"
+      >
+        作品の英語ページ作成
+      </a>
+    ),
+    date: "2023.5.24",
+    value_en: (
+      <a
+        href="https://baplisca.onrender.com/work_en/"
+        rel="noreferrer noopener"
+        target="_blank"
+      >
+        作品の英語ページ作成
+      </a>
+    ),
+    date_en: "2023-5-24",
+  },
+  {
     value: "文字の大きさ変更, H2デザイン修正",
     date: "2023.5.8",
     value_en: "Change font size, modify H2 design",
