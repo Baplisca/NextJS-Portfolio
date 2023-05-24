@@ -1,7 +1,7 @@
-import { IAboutContent } from "../interfaces/about-content.interface";
+import { IContent } from "../interfaces/about-content.interface";
 import ContentsDisplay from "./ContentsDisplay";
 
-const educationItems: IAboutContent[] = [
+const educationItems: IContent[] = [
   {
     value: "東北大学大学院 情報科学研究科 応用情報科学専攻 卒業 2022.3",
     value_en:

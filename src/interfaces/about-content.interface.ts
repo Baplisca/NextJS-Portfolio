@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 
-export interface IAboutContent {
+export interface IContent {
   value: ReactElement | string;
   value_en?: ReactElement | string;
   isDisableBr?: boolean;

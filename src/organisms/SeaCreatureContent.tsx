@@ -1,7 +1,9 @@
+import { IContent } from "../interfaces/about-content.interface";
 import { IWorkImage } from "../interfaces/work-image.interface";
 import { IWorkVideo } from "../interfaces/work-video.interface";
 import WorkImageContent from "../molecules/WorkImageContent";
 import WorkVideoContent from "../molecules/WorkVideoContent";
+import ContentsDisplay from "./ContentsDisplay";
 
 const imageItems: IWorkImage[] = [
   {
@@ -51,12 +53,34 @@ const videoItems: IWorkVideo[] = [
   },
 ];
 
+const seaCreatureItems: IContent[] = [
+  {
+    value: <h2 className="WorkH2Wrapper">海洋生物たちの復讐</h2>,
+    value_en: <h2 className="WorkH2Wrapper">Revenge of the Sea Creatures</h2>,
+    isDisableBr: true,
+    isDisableDot: true,
+  },
+  {
+    value: "大学1年次に制作した初めてのゲーム作品です",
+    value_en: "This is the first game I made in my first year at university.",
+    isDisableBr: true,
+    isDisableDot: true,
+  },
+  {
+    value:
+      "縦スクロールシューティングゲームで, C言語とDXライブラリを用いました",
+    value_en:
+      "Vertical scrolling shooting game using C language and DX library",
+    isDisableBr: true,
+    isDisableDot: true,
+  },
+];
+
 const SeaCreatureContent = () => {
   return (
     <>
-      <h2 className="WorkH2Wrapper">海洋生物たちの復讐</h2>
-      <p>大学1年次に制作した初めてのゲーム作品です</p>
-      <p>縦スクロールシューティングゲームで, C言語とDXライブラリを用いました</p>
+      {ContentsDisplay(seaCreatureItems)}
+      <br />
       <WorkImageContent imageItems={imageItems} />
       <WorkVideoContent videoItems={videoItems} />
     </>

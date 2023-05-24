@@ -6,7 +6,7 @@ const WorkVideoContent = (props: { videoItems: IWorkVideo[] }) => {
   return (
     <>
       <details>
-        <summary>動画</summary>
+        <summary>Movie</summary>
         <div style={{ textAlign: "center" }}>
           {props.videoItems.map((videoItem, idx) => (
             <div className={styles.YoutubeWrapper} key={idx}>

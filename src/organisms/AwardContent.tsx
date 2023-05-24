@@ -1,7 +1,7 @@
-import { IAboutContent } from "../interfaces/about-content.interface";
+import { IContent } from "../interfaces/about-content.interface";
 import ContentsDisplay from "./ContentsDisplay";
 
-const awardItems: IAboutContent[] = [
+const awardItems: IContent[] = [
   {
     value: (
       <span>
