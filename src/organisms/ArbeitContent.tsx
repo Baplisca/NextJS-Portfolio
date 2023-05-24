@@ -1,7 +1,7 @@
-import { IAboutContent } from "../interfaces/about-content.interface";
+import { IContent } from "../interfaces/about-content.interface";
 import ContentsDisplay from "./ContentsDisplay";
 
-const arbeitItems: IAboutContent[] = [
+const arbeitItems: IContent[] = [
   {
     value: "楽天 Webアプリケーションエンジニア 2021.7 ~ 2022.3",
     value_en: "Rakuten Applications Engineer 7/2021 ~ 3/2022",

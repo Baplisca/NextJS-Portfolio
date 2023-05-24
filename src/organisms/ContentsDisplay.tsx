@@ -1,7 +1,7 @@
-import { IAboutContent } from "../interfaces/about-content.interface";
+import { IContent } from "../interfaces/about-content.interface";
 import { useLanguageStore } from "../stores/language-store";
 
-const ContentsDisplay = (Items: IAboutContent[]) => {
+const ContentsDisplay = (Items: IContent[]) => {
   const languageStore = useLanguageStore();
   return Items.map((_item, idx) => {
     const value =

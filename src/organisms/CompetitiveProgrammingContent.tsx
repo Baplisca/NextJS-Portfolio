@@ -1,7 +1,45 @@
 import ContentsDisplay from "./ContentsDisplay";
-import { IAboutContent } from "../interfaces/about-content.interface";
+import { IContent } from "../interfaces/about-content.interface";
 
-const libraryContents: IAboutContent[][] = [
+const competitiveProgrammingItems: IContent[] = [
+  {
+    value: (
+      <h2 className="WorkH2Wrapper">
+        <a
+          href="https://github.com/Baplisca/Competitive-Programming-Library"
+          rel="noreferrer noopener"
+          target="_blank"
+          style={{ textDecoration: "none" }}
+        >
+          競技プログラミング用のライブラリ
+        </a>
+      </h2>
+    ),
+    value_en: (
+      <h2 className="WorkH2Wrapper">
+        <a
+          href="https://github.com/Baplisca/Competitive-Programming-Library"
+          rel="noreferrer noopener"
+          target="_blank"
+          style={{ textDecoration: "none" }}
+        >
+          Libraries for competitive programming
+        </a>
+      </h2>
+    ),
+    isDisableBr: true,
+    isDisableDot: true,
+  },
+  {
+    value:
+      "競プロで頻繁に用いる処理をライブラリにしたものです。言語はC++です。",
+    value_en:
+      "This is a library of processing that is frequently used in competitive programming. Programming Language is C++",
+    isDisableBr: true,
+    isDisableDot: true,
+  },
+];
+const libraryContents: IContent[][] = [
   [
     {
       value: "グラフ・木構造",
@@ -97,158 +135,158 @@ const libraryContents: IAboutContent[][] = [
     },
     {
       value: "エラトステネスのふるい",
-      value_en: "",
+      value_en: "Sieve of Eratosthenes",
       isDisableBr: true,
     },
     {
       value: "二項係数 (simple version)",
-      value_en: "",
+      value_en: "binomial coefficients (simple version)",
       isDisableBr: true,
     },
     {
       value: "二項係数 (mod version)",
-      value_en: "",
+      value_en: "binomial coefficients (mod version)",
       isDisableBr: true,
     },
     {
       value: "二項係数 (mod + memoization version)",
-      value_en: "",
+      value_en: "binomial coefficients (mod + memoization version)",
       isDisableBr: true,
     },
     {
       value: "重複順列",
-      value_en: "",
+      value_en: "duplicate permutation",
       isDisableBr: true,
     },
     {
       value: "約数列挙",
-      value_en: "",
+      value_en: "divisor enumeration",
       isDisableBr: true,
     },
     {
       value: "包除原理",
-      value_en: "",
+      value_en: "Principle of inclusion-exclusion (PIE)",
       isDisableBr: true,
     },
     {
       value: "逆元",
-      value_en: "",
+      value_en: "inverse element",
       isDisableBr: true,
     },
   ],
   [
     {
       value: "その他データ構造",
-      value_en: "",
+      value_en: "Other data structures",
       isDisableBr: true,
       isDisableDot: true,
     },
     {
       value: "累積和",
-      value_en: "",
+      value_en: "cumulative sum",
       isDisableBr: true,
     },
     {
       value: "2次元累積和",
-      value_en: "",
+      value_en: "2D cumulative sum",
       isDisableBr: true,
     },
     {
-      value: "BIT",
-      value_en: "",
+      value: "Binary Indexed Tree (BIT)",
+      value_en: "Binary Indexed Tree (BIT)",
       isDisableBr: true,
     },
     {
       value: "区間加算BIT",
-      value_en: "",
+      value_en: "Section addition BIT",
       isDisableBr: true,
     },
     {
-      value: "RSQ",
+      value: "Range Sum Queries (RSQ)",
       value_en: "",
       isDisableBr: true,
     },
     {
       value: "セグメント木",
-      value_en: "",
+      value_en: "Segment Tree",
       isDisableBr: true,
     },
     {
       value: "1点更新セグメント木",
-      value_en: "",
+      value_en: "1-point update segment tree",
       isDisableBr: true,
     },
     {
-      value: "RMQ",
-      value_en: "",
+      value: "Range Maximum Queries (RMQ)",
+      value_en: "Range Maximum Queries (RMQ)",
       isDisableBr: true,
     },
     {
-      value: "RSQ",
-      value_en: "",
+      value: "Range Sum Queries (RSQ)",
+      value_en: "Range Sum Queries (RSQ)",
       isDisableBr: true,
     },
     {
       value: "遅延評価セグメント木",
-      value_en: "",
+      value_en: "lazy segment tree",
       isDisableBr: true,
     },
     {
       value: "Union-Find",
-      value_en: "",
+      value_en: "Union-Find",
       isDisableBr: true,
     },
     {
       value: "重み付きUnion-Find",
-      value_en: "",
+      value_en: "Weighted Union-Find",
       isDisableBr: true,
     },
     {
       value: "ダブリング",
-      value_en: "",
+      value_en: "dabbling",
       isDisableBr: true,
     },
     {
       value: "双対問題",
-      value_en: "",
+      value_en: "dual problem",
       isDisableBr: true,
     },
   ],
   [
     {
       value: "その他",
-      value_en: "",
+      value_en: "Others",
       isDisableBr: true,
       isDisableDot: true,
     },
     {
       value: "順列全探索",
-      value_en: "",
+      value_en: "Permutation exhaustive search",
       isDisableBr: true,
     },
     {
       value: "bit全探索",
-      value_en: "",
+      value_en: "bit exhaustive search",
       isDisableBr: true,
     },
     {
       value: "しゃくとり法",
-      value_en: "",
+      value_en: "Two-Pointer Techinique",
       isDisableBr: true,
     },
     {
       value: "二分探索",
-      value_en: "",
+      value_en: "binary search",
       isDisableBr: true,
     },
     {
       value: "いもす法",
-      value_en: "",
+      value_en: "imos method",
       isDisableBr: true,
     },
     {
       value: "座標圧縮",
-      value_en: "",
+      value_en: "coordinate compression",
       isDisableBr: true,
     },
   ],
@@ -257,19 +295,10 @@ const libraryContents: IAboutContent[][] = [
 const CompetitiveProgrammingContent = () => {
   return (
     <>
-      <h2 className="WorkH2Wrapper">
-        <a
-          href="https://github.com/Baplisca/Competitive-Programming-Library"
-          rel="noreferrer noopener"
-          target="_blank"
-          style={{ textDecoration: "none" }}
-        >
-          競技プログラミング用のライブラリ
-        </a>
-      </h2>
-      <p>競プロで頻繁に用いる処理をライブラリにしたものです。言語はC++です。</p>
+      {ContentsDisplay(competitiveProgrammingItems)}
+      <br />
       <details>
-        <summary>ライブラリ一覧</summary>
+        <summary>Library list</summary>
         <>
           {libraryContents.map((content, idx) => {
             return <ul key={idx}>{ContentsDisplay(content)}</ul>;

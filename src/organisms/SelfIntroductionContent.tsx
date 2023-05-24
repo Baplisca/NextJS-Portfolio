@@ -1,7 +1,7 @@
-import { IAboutContent } from "../interfaces/about-content.interface";
+import { IContent } from "../interfaces/about-content.interface";
 import ContentsDisplay from "./ContentsDisplay";
 
-const selfIntroductionItems: IAboutContent[] = [
+const selfIntroductionItems: IContent[] = [
   {
     value: "横田　光悦 (Yokota Koetsu)",
     value_en: "Koetsu Yokota",

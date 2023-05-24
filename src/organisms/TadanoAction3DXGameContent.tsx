@@ -1,7 +1,9 @@
+import { IContent } from "../interfaces/about-content.interface";
 import { IWorkImage } from "../interfaces/work-image.interface";
 import { IWorkVideo } from "../interfaces/work-video.interface";
 import WorkImageContent from "../molecules/WorkImageContent";
 import WorkVideoContent from "../molecules/WorkVideoContent";
+import ContentsDisplay from "./ContentsDisplay";
 
 const imageItems: IWorkImage[] = [
   {
@@ -63,15 +65,40 @@ const videoItems: IWorkVideo[] = [
   },
 ];
 
+const tadanoActionItems: IContent[] = [
+  {
+    value: <h2 className="WorkH2Wrapper">TadanoAction3DXGame</h2>,
+    value_en: <h2 className="WorkH2Wrapper">TadanoAction3DXGame</h2>,
+    isDisableBr: true,
+    isDisableDot: true,
+  },
+  {
+    value:
+      "3Dゲームを作りたい and Blenderの勉強目的で制作した3Dアクションゲーム",
+    value_en:
+      "I want to make a 3D game and I made a 3D action game for studying Blender",
+    isDisableBr: true,
+    isDisableDot: true,
+  },
+  {
+    value: "規模がデカすぎて, 制作は中断しました",
+    value_en: "The scale was too big, so the production was stopped.",
+    isDisableBr: true,
+    isDisableDot: true,
+  },
+  {
+    value: "言語はC#で, ゲームエンジンはUnityを使用しています",
+    value_en: "The language is C#, and the game engine uses Unity.",
+    isDisableBr: true,
+    isDisableDot: true,
+  },
+];
+
 const TadanoAction3DXGameContent = () => {
   return (
     <>
-      <h2 className="WorkH2Wrapper">TadanoAction3DXGame</h2>
-      <p>
-        3Dゲームを作りたい and Blenderの勉強目的で制作した3Dアクションゲーム
-      </p>
-      <p>規模がデカすぎて, 制作は中断しました</p>
-      <p>言語はC#で, ゲームエンジンはUnityを使用しています</p>
+      {ContentsDisplay(tadanoActionItems)}
+      <br />
       <WorkImageContent imageItems={imageItems} />
       <WorkVideoContent videoItems={videoItems} />
     </>

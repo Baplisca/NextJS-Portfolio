@@ -1,7 +1,7 @@
-import { IAboutContent } from "../interfaces/about-content.interface";
+import { IContent } from "../interfaces/about-content.interface";
 import ContentsDisplay from "./ContentsDisplay";
 
-const freeTimeItems: IAboutContent[] = [
+const freeTimeItems: IContent[] = [
   { value: "サウナ", value_en: "Sauna" },
   { value: "麻雀", value_en: "Mahjong" },
   {
