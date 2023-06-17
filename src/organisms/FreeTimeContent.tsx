@@ -49,7 +49,7 @@ const freeTimeItems: IContent[] = [
 const FreeTimeContent = () => {
   return (
     <>
-      <h2 className="AboutH2Wrapper">Free time</h2>
+      <h2 className="H2Wrapper">Free time</h2>
       <ul>{ContentsDisplay(freeTimeItems)}</ul>
     </>
   );

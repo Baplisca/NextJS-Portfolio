@@ -67,8 +67,8 @@ const videoItems: IWorkVideo[] = [
 
 const tadanoActionItems: IContent[] = [
   {
-    value: <h2 className="WorkH2Wrapper">TadanoAction3DXGame</h2>,
-    value_en: <h2 className="WorkH2Wrapper">TadanoAction3DXGame</h2>,
+    value: <h2 className="H2Wrapper">TadanoAction3DXGame</h2>,
+    value_en: <h2 className="H2Wrapper">TadanoAction3DXGame</h2>,
     isDisableBr: true,
     isDisableDot: true,
   },

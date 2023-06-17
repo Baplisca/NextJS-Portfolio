@@ -41,7 +41,7 @@ const qualificationItems: IContent[] = [
 const QualificationContent = () => {
   return (
     <>
-      <h2 className="AboutH2Wrapper">Qualifications</h2>
+      <h2 className="H2Wrapper">Qualifications</h2>
       <ul>{ContentsDisplay(qualificationItems)}</ul>
     </>
   );

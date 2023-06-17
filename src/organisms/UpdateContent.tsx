@@ -308,7 +308,7 @@ const UpdateItem = () => {
 const UpdateContent = () => {
   return (
     <>
-      <h2 className="AboutH2Wrapper">Updates</h2>
+      <h2 className="H2Wrapper">Updates</h2>
       <br />
       <div className={styles.ScrollOuterWrapper}>
         <div className={styles.ScrollWrapper}>
