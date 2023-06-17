@@ -20,7 +20,7 @@ const arbeitItems: IContent[] = [
 const ArbeitContent = () => {
   return (
     <>
-      <h2 className="AboutH2Wrapper">Arbeit</h2>
+      <h2 className="H2Wrapper">Arbeit</h2>
       <ul>{ContentsDisplay(arbeitItems)}</ul>
     </>
   );

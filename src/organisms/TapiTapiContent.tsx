@@ -27,8 +27,8 @@ const imageItems: IWorkImage[] = [
 
 const tapitapiItems: IContent[] = [
   {
-    value: <h2 className="WorkH2Wrapper">タピタピ</h2>,
-    value_en: <h2 className="WorkH2Wrapper">TapiTapi</h2>,
+    value: <h2 className="H2Wrapper">タピタピ</h2>,
+    value_en: <h2 className="H2Wrapper">TapiTapi</h2>,
     isDisableBr: true,
     isDisableDot: true,
   },

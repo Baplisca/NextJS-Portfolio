@@ -4,8 +4,8 @@ import ContentsDisplay from "./ContentsDisplay";
 
 const googleDialogFlowItems: IContent[] = [
   {
-    value: <h2 className="WorkH2Wrapper">レコメンドレシピチャットボット</h2>,
-    value_en: <h2 className="WorkH2Wrapper">Recommendation recipe chatbot</h2>,
+    value: <h2 className="H2Wrapper">レコメンドレシピチャットボット</h2>,
+    value_en: <h2 className="H2Wrapper">Recommendation recipe chatbot</h2>,
     isDisableBr: true,
     isDisableDot: true,
   },

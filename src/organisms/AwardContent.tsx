@@ -33,7 +33,7 @@ const awardItems: IContent[] = [
 const AwardContent = () => {
   return (
     <>
-      <h2 className="AboutH2Wrapper">Awards (Official)</h2>
+      <h2 className="H2Wrapper">Awards (Official)</h2>
       <ul>{ContentsDisplay(awardItems)}</ul>
     </>
   );

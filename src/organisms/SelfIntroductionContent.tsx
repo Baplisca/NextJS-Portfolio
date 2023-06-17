@@ -14,7 +14,7 @@ const selfIntroductionItems: IContent[] = [
 const SelfIntroductionContent = () => {
   return (
     <>
-      <h2 className="AboutH2Wrapper">Self-Introduction</h2>
+      <h2 className="H2Wrapper">Self-Introduction</h2>
       <ul>{ContentsDisplay(selfIntroductionItems)}</ul>
     </>
   );

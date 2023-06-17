@@ -43,8 +43,8 @@ const videoItems: IWorkVideo[] = [
 
 const voiceTravelerItems: IContent[] = [
   {
-    value: <h2 className="WorkH2Wrapper">ボイストラベラー (Voice Traveler)</h2>,
-    value_en: <h2 className="WorkH2Wrapper">Voice Traveler</h2>,
+    value: <h2 className="H2Wrapper">ボイストラベラー (Voice Traveler)</h2>,
+    value_en: <h2 className="H2Wrapper">Voice Traveler</h2>,
     isDisableBr: true,
     isDisableDot: true,
   },

@@ -6,18 +6,11 @@ body {
   font-family: "Noto Serif JP", serif;
 }
 
-.AboutH2Wrapper {
+.H2Wrapper {
   padding: 0.25em 0.5em;
   background: transparent;
   border-left: solid 5px #000000;
   border-bottom: solid 1px black;
-}
-
-.WorkH2Wrapper {
-  padding: 0.25em 0.5em;
-  background: transparent;
-  border-left: solid 5px #000000;
-  border-bottom: solid 1px #999999;
 }
 
 .DisableListDot {

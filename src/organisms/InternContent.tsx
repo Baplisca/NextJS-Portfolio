@@ -120,7 +120,7 @@ const internItems: IContent[] = [
 const InternContent = () => {
   return (
     <>
-      <h2 className="AboutH2Wrapper">Intern</h2>
+      <h2 className="H2Wrapper">Intern</h2>
       <ul>{ContentsDisplay(internItems)}</ul>
     </>
   );

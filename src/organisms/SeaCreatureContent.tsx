@@ -55,8 +55,8 @@ const videoItems: IWorkVideo[] = [
 
 const seaCreatureItems: IContent[] = [
   {
-    value: <h2 className="WorkH2Wrapper">海洋生物たちの復讐</h2>,
-    value_en: <h2 className="WorkH2Wrapper">Revenge of the Sea Creatures</h2>,
+    value: <h2 className="H2Wrapper">海洋生物たちの復讐</h2>,
+    value_en: <h2 className="H2Wrapper">Revenge of the Sea Creatures</h2>,
     isDisableBr: true,
     isDisableDot: true,
   },

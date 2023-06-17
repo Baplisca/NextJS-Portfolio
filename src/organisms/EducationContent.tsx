@@ -29,7 +29,7 @@ const educationItems: IContent[] = [
 const EducationContent = () => {
   return (
     <>
-      <h2 className="AboutH2Wrapper">Education</h2>
+      <h2 className="H2Wrapper">Education</h2>
       <ul>{ContentsDisplay(educationItems)}</ul>
     </>
   );

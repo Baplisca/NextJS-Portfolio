@@ -24,7 +24,7 @@ const currentWorkItems: IContent[] = [
 const CurrentWorkContent = () => {
   return (
     <>
-      <h2 className="AboutH2Wrapper">Current Work</h2>
+      <h2 className="H2Wrapper">Current Work</h2>
       <ul>{ContentsDisplay(currentWorkItems)}</ul>
     </>
   );

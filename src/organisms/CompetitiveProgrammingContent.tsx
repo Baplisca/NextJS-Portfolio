@@ -4,7 +4,7 @@ import { IContent } from "../interfaces/about-content.interface";
 const competitiveProgrammingItems: IContent[] = [
   {
     value: (
-      <h2 className="WorkH2Wrapper">
+      <h2 className="H2Wrapper">
         <a
           href="https://github.com/Baplisca/Competitive-Programming-Library"
           rel="noreferrer noopener"
@@ -16,7 +16,7 @@ const competitiveProgrammingItems: IContent[] = [
       </h2>
     ),
     value_en: (
-      <h2 className="WorkH2Wrapper">
+      <h2 className="H2Wrapper">
         <a
           href="https://github.com/Baplisca/Competitive-Programming-Library"
           rel="noreferrer noopener"
