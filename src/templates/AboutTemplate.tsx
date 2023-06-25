@@ -3,6 +3,7 @@ import AwardContent from "../organisms/AwardContent";
 import CurrentWorkContent from "../organisms/CurrentWorkContent";
 import EducationContent from "../organisms/EducationContent";
 import FreeTimeContent from "../organisms/FreeTimeContent";
+import { GeneralPresentationContent } from "../organisms/GeneralPresentationContent";
 import InternContent from "../organisms/InternContent";
 import QualificationContent from "../organisms/QualificationContent";
 import SelfIntroductionContent from "../organisms/SelfIntroductionContent";
@@ -20,6 +21,7 @@ const AboutTemplate = () => {
         <EducationContent />
         <AwardContent />
         <QualificationContent />
+        <GeneralPresentationContent />
         <FreeTimeContent />
         <UpdateContent />
       </div>

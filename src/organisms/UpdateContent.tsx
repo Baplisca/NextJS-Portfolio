@@ -11,6 +11,12 @@ interface IUpdateItem {
 
 const updateItems: IUpdateItem[] = [
   {
+    value: "General Presentation追加",
+    date: "2023.6.25",
+    value_en: "Add General Presentation",
+    date_en: "2023-6-25",
+  },
+  {
     value: "文字の大きさ変更, H2デザイン修正",
     date: "2023.5.8",
     value_en: "Change font size, modify H2 design",
