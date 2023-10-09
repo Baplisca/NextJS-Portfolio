@@ -33,7 +33,7 @@ const updateItems: IUpdateItem[] = [
         rel="noreferrer noopener"
         target="_blank"
       >
-        作品の英語ページ作成
+        Create an English work page
       </a>
     ),
     date_en: "2023-5-24",
