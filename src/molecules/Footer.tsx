@@ -15,11 +15,11 @@ const Footer = () => {
             <img src="/assets/linkedin.svg" alt="linkedin アイコン" />
           </a>
           <a
-            href="https://twitter.com/sooooouls"
+            href="https://x.com/sooooouls"
             rel="noreferrer noopener"
             target="_blank"
           >
-            <img src="/assets/twitter-icon.jpg" alt="Twitter アイコン" />
+            <img src="/assets/x-icon.jpeg" alt="X アイコン" />
           </a>
           <a
             href="https://github.com/Baplisca"
