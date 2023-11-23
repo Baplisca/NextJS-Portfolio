@@ -5,6 +5,28 @@ const generalPresentationItems: IContent[] = [
   {
     value: (
       <span>
+        「Java+MySQLからTypeScript+Cassandraへの移行開発」 Rakuten Tech Conf
+        2023
+      </span>
+    ),
+  },
+  {
+    value: (
+      <span>
+        <a
+          href="https://rakutentechsendai.connpass.com/event/297724/"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          Rakuten Tech Conf 2023 in Sendai
+        </a>
+        {"  運営"}
+      </span>
+    ),
+  },
+  {
+    value: (
+      <span>
         <a
           href="https://lets-go-study-meeting.connpass.com/event/276114/"
           rel="noreferrer noopener"

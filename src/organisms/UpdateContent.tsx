@@ -11,6 +11,12 @@ interface IUpdateItem {
 
 const updateItems: IUpdateItem[] = [
   {
+    value: "General Presentation追加",
+    date: "2023.11.23",
+    value_en: "Add General Presentation",
+    date_en: "2023-11-23",
+  },
+  {
     value: "twitter から X に置き換え",
     date: "2023.10.9",
     value_en: "Replace from twitter to x",
