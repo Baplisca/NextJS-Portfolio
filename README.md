@@ -19,7 +19,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ### State management
 
-[・zustand](https://github.com/pmndrs/zustand)
+・[zustand](https://github.com/pmndrs/zustand)
 
 ### Linter/Formatter
 
@@ -29,17 +29,17 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ### Other Library
 
-[・nextjs-progressbar](https://github.com/apal21/nextjs-progressbar) show progress bar
+・[nextjs-progressbar](https://github.com/apal21/nextjs-progressbar): show progress bar
 
-[・font-awesome](https://fontawesome.com/) icon
+・[font-awesome](https://fontawesome.com/): icon
 
-[・react-responsive](https://github.com/contra/react-responsive) media query in react
+・[react-responsive](https://github.com/contra/react-responsive): media query in react
 
-[・react-responsive-carousel](https://github.com/leandrowd/react-responsive-carousel) use auto slide show
+・[react-responsive-carousel](https://github.com/leandrowd/react-responsive-carousel): use auto slide show
 
-[・html-react-parser](https://github.com/remarkablemark/html-react-parser#readme) parce html in .tsx
+・[html-react-parser](https://github.com/remarkablemark/html-react-parser#readme): parce html in .tsx
 
-[・volta](https://github.com/volta-cli/volta) node version control tool
+・[volta](https://github.com/volta-cli/volta): node version control tool
 
 ### Enviroment
 
