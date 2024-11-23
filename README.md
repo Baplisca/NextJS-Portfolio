@@ -11,6 +11,16 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Deploy
+
+```
+# check build
+
+# push code to main branch (or merge PR to main branch)
+
+# check result: https://baplisca.onrender.com/
+```
+
 ## Dependency Library
 
 ### Framework

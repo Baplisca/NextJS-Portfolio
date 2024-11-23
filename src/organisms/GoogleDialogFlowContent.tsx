@@ -57,13 +57,13 @@ const googleDialogFlowItems: IContent[] = [
     value: (
       <span>
         右下のアイコンから試せますが、メンテナンスしていないため動かなくなる時が来るかもしれません
-        (裏で動いているコード
+        (裏で動いている
         <a
           href="https://github.com/Baplisca/Dialogflow_RakutenRecipe"
           rel="noreferrer noopener"
           target="_blank"
         >
-          リポジトリ
+          コードリポジトリ
         </a>
         )
       </span>
@@ -79,7 +79,6 @@ const googleDialogFlowItems: IContent[] = [
         >
           (code running behind the scenes)
         </a>
-        )
       </span>
     ),
     isDisableBr: true,

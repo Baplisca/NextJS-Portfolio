@@ -12,6 +12,12 @@ interface IUpdateItem {
 const updateItems: IUpdateItem[] = [
   {
     value: "General Presentation追加",
+    date: "2024.11.23",
+    value_en: "Add General Presentation",
+    date_en: "2024-11-23",
+  },
+  {
+    value: "General Presentation追加",
     date: "2023.11.23",
     value_en: "Add General Presentation",
     date_en: "2023-11-23",
