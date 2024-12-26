@@ -3,6 +3,10 @@ import ContentsDisplay from "./ContentsDisplay";
 
 const qualificationItems: IContent[] = [
   {
+    value: "データベーススペシャリスト試験 (DB) 合格 2024.10",
+    value_en: "Database Specialist Examination 10/2024",
+  },
+  {
     value: (
       <span>
         <a
