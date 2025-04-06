@@ -5,6 +5,20 @@ const generalPresentationItems: IContent[] = [
   {
     value: (
       <span>
+        <a
+          href="https://sre-lounge.connpass.com/event/345125/"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          「大規模組織での障害対応：楽天エンジニアの切り分け術」 Road to SRE
+          NEXT@仙台 スポンサーセッション(2025)
+        </a>
+      </span>
+    ),
+  },
+  {
+    value: (
+      <span>
         「R-MesseのAI機能紹介とRAGを用いた今後の改善」 Rakuten Tech Conf 2024
       </span>
     ),
