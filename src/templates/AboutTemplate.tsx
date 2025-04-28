@@ -5,6 +5,7 @@ import EducationContent from "../organisms/EducationContent";
 import FreeTimeContent from "../organisms/FreeTimeContent";
 import { GeneralPresentationContent } from "../organisms/GeneralPresentationContent";
 import InternContent from "../organisms/InternContent";
+import PatentContent from "../organisms/PatentContent";
 import QualificationContent from "../organisms/QualificationContent";
 import SelfIntroductionContent from "../organisms/SelfIntroductionContent";
 import UpdateContent from "../organisms/UpdateContent";
@@ -22,6 +23,7 @@ const AboutTemplate = () => {
         <AwardContent />
         <QualificationContent />
         <GeneralPresentationContent />
+        <PatentContent />
         <FreeTimeContent />
         <UpdateContent />
       </div>
