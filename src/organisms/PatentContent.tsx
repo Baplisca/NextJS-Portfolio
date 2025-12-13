@@ -5,16 +5,27 @@ const patentItems: IContent[] = [
   {
     value: (
       <span>
-        効率的な過去回答の取得のための情報検索装置、情報検索方法及びプログラム
-        (jglobal反映待ち)
+        <a
+          href="https://jglobal.jst.go.jp/en/detail?JGLOBAL_ID=202503011540213595"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          効率的な過去回答の取得のための情報検索装置、情報検索方法及びプログラム
+        </a>
         <br />
         出願番号(国際出願番号)：特願2024-146040　出願日：2024.8
       </span>
     ),
     value_en: (
       <span>
-        Information search device, information search method, and program for
-        efficiently acquiring past answers
+        <a
+          href="https://jglobal.jst.go.jp/en/detail?JGLOBAL_ID=202503011540213595"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          Information search device, information search method, and program for
+          efficiently acquiring past answers
+        </a>
         <br />
         Application number (international application number): Patent
         application:2024-146040　Application date:8/2024

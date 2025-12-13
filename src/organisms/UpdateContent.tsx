@@ -12,6 +12,12 @@ interface IUpdateItem {
 const updateItems: IUpdateItem[] = [
   {
     value: "特許追加",
+    date: "2025.12.13",
+    value_en: "Add Patent",
+    date_en: "2025-12-13",
+  },
+  {
+    value: "特許追加",
     date: "2025.04.28",
     value_en: "Add Patent",
     date_en: "2025-04-28",
