@@ -6,6 +6,20 @@ const generalPresentationItems: IContent[] = [
     value: (
       <span>
         <a
+          href="https://rakutentechsendai.connpass.com/event/370933/"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          Rakuten Tech Conf 2025 in Sendai
+        </a>
+        {"  運営"}
+      </span>
+    ),
+  },
+  {
+    value: (
+      <span>
+        <a
           href="https://sre-lounge.connpass.com/event/345125/"
           rel="noreferrer noopener"
           target="_blank"
