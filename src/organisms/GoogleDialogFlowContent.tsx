@@ -1,6 +1,9 @@
 import { IContent } from "../interfaces/about-content.interface";
+import { IWorkImage } from "../interfaces/work-image.interface";
 import GoogleDialogFlow from "../molecules/GoogleDialogFlow";
+import WorkImageContent from "../molecules/WorkImageContent";
 import ContentsDisplay from "./ContentsDisplay";
+import styles from "./VerticalContent.module.scss";
 
 const googleDialogFlowItems: IContent[] = [
   {
@@ -56,7 +59,7 @@ const googleDialogFlowItems: IContent[] = [
   {
     value: (
       <span>
-        右下のアイコンから試せますが、メンテナンスしていないため動かなくなる時が来るかもしれません
+        右下のアイコンから開けますが、メンテナンスしていないため動きません
         (裏で動いている
         <a
           href="https://github.com/Baplisca/Dialogflow_RakutenRecipe"
@@ -70,8 +73,8 @@ const googleDialogFlowItems: IContent[] = [
     ),
     value_en: (
       <span>
-        You can try it from the icon on the bottom right, but it may stop
-        working because it is not maintained{" "}
+        You can open it from the icon at the bottom right, but it doesnnt work
+        because its not under maintenance.{" "}
         <a
           href="https://github.com/Baplisca/Dialogflow_RakutenRecipe"
           rel="noreferrer noopener"
@@ -85,12 +88,29 @@ const googleDialogFlowItems: IContent[] = [
     isDisableDot: true,
   },
 ];
+
+const imageItems: IWorkImage[] = [
+  {
+    src: "RakutenRecipe2.jpg",
+    alt: "楽天レシピ 画像1",
+    width: 120,
+    height: 120,
+  },
+];
+
 const GoogleDialogFlowContent = () => {
   return (
     <>
       {ContentsDisplay(googleDialogFlowItems)}
       <br />
       <GoogleDialogFlow />
+      <div className={styles.PortraitImageWrapper}>
+        <WorkImageContent
+          imageItems={imageItems}
+          centerMode
+          centerSlidePercentage={80}
+        />
+      </div>
     </>
   );
 };

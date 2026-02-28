@@ -2,7 +2,7 @@ import { IContent } from "../interfaces/about-content.interface";
 import { IWorkImage } from "../interfaces/work-image.interface";
 import WorkImageContent from "../molecules/WorkImageContent";
 import ContentsDisplay from "./ContentsDisplay";
-import styles from "./TapiTapiContent.module.scss";
+import styles from "./VerticalContent.module.scss";
 
 const imageItems: IWorkImage[] = [
   {
