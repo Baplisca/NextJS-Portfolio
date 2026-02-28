@@ -11,6 +11,12 @@ interface IUpdateItem {
 
 const updateItems: IUpdateItem[] = [
   {
+    value: "Dialogflow説明更新",
+    date: "2026.2.28",
+    value_en: "Update Dialogflow description",
+    date_en: "2026-02-28",
+  },
+  {
     value: "特許追加",
     date: "2025.12.13",
     value_en: "Add Patent",
